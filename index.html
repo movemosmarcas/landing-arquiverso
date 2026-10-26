@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arquiverso — El universo operativo de tu estudio de arquitectura</title>
+  <meta name="description" content="Convierte tu estudio de arquitectura en una empresa rentable. De estudio a empresa con un salto tecnológico a través de un sistema centralizado." />
+  <link rel="icon" type="image/png" href="./favicon.png?v=3" />
+  <link rel="shortcut icon" href="./favicon.ico?v=3" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=16" />
+</head>
+<body>
+  <!-- Fondos Atmosféricos -->
+  <div class="ambient-canvas" aria-hidden="true">
+    <div class="ambient-orb orb-petrol"></div>
+    <div class="ambient-orb orb-indigo"></div>
+    <div class="ambient-orb orb-ice"></div>
+    <div class="noise-overlay"></div>
+  </div>
+
+  <!-- Navegación Principal -->
+  <header class="site-header" id="top">
+    <div class="container nav-container">
+      <a href="#top" class="brand-logo" aria-label="Arquiverso Inicio">
+        <img src="./LOGO-ARQUIVERSO.png?v=2" alt="Arquiverso" class="brand-logo-img" />
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#realidad" class="nav-link"><span class="nav-num">01</span>El Cambio</a>
+        <a href="#sistema" class="nav-link"><span class="nav-num">02</span>Dos Núcleos</a>
+        <a href="#mentoria" class="nav-link"><span class="nav-num">03</span>Mentoría</a>
+        <a href="#modulos" class="nav-link"><span class="nav-num">04</span>Herramienta</a>
+        <a href="#origen" class="nav-link"><span class="nav-num">05</span>Origen</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn btn-primary" data-open-modal="early-access">
+          <span>Aplicar al programa</span>
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Menú Móvil -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <nav class="mobile-nav-links">
+        <a href="#realidad" class="mobile-link">01 — El Cambio</a>
+        <a href="#sistema" class="mobile-link">02 — Un Sistema, Dos Núcleos</a>
+        <a href="#mentoria" class="mobile-link">03 — Núcleo de Mentoría</a>
+        <a href="#modulos" class="mobile-link">04 — Núcleo de Herramienta</a>
+        <a href="#origen" class="mobile-link">05 — Nuestro Origen (Espacial)</a>
+      </nav>
+      <div class="mobile-drawer-cta">
+        <button class="btn btn-primary full-width" data-open-modal="early-access">Aplicar al programa</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =====================================================================
+         A. HERO SECTION
+    ====================================================================== -->
+    <section class="hero-section">
+      <svg class="hero-constellation" viewBox="0 0 1200 560" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M90 120 H290 Q310 120 310 140 V250 Q310 270 330 270 H480" stroke="rgba(201,137,110,0.22)" stroke-width="1"/>
+        <path d="M1110 95 H910 Q890 95 890 115 V225 Q890 245 870 245 H720" stroke="rgba(159,146,164,0.25)" stroke-width="1"/>
+        <circle cx="90" cy="120" r="3" fill="#C9896E" fill-opacity="0.8"/>
+        <circle cx="1110" cy="95" r="3" fill="#9F92A4" fill-opacity="0.8"/>
+      </svg>
+
+      <div class="container hero-container">
+        <div class="hero-badge-row reveal">
+          <span class="pulse-dot"></span>
+          <span class="badge-mono">La fórmula secreta del éxito de los estudios de arquitectura</span>
+        </div>
+
+        <h1 class="hero-title reveal">
+          El mejor sistema para estructurar, controlar y operar <span class="text-gradient">tu estudio de arquitectura.</span>
+        </h1>
+
+        <div class="hero-cores reveal">
+          <div class="hero-core">
+            <span class="hero-core-tag">NÚCLEO 1</span>
+            <p>Una <strong>mentoría 1:1</strong> con la experiencia real de <strong>Espacial Estudio</strong></p>
+          </div>
+          <span class="hero-core-plus" aria-hidden="true">+</span>
+          <div class="hero-core">
+            <span class="hero-core-tag">NÚCLEO 2</span>
+            <p>Una <strong>herramienta</strong> que lo pone todo en práctica: proyectos, tareas, equipo y finanzas en un solo lugar.</p>
+          </div>
+        </div>
+
+        <div class="hero-cta-group reveal">
+          <button class="btn btn-primary btn-lg" data-open-modal="early-access">
+            <span>Aplicar al programa</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- MOCKUP: ARQUIVERSO OS WORKSPACE -->
+        <div class="os-showcase-frame reveal" id="heroMockup">
+          <div class="os-frame-glow"></div>
+          <div class="os-window">
+            <div class="os-topbar">
+              <div class="os-window-controls">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="os-breadcrumb">
+                <span class="mono-tag">ARQUIVERSO OS</span>
+                <span class="crumb-sep">/</span>
+                <span class="crumb-active">CENTRO DE CONTROL DEL ESTUDIO</span>
+              </div>
+              <div class="os-status-pill">
+                <span class="status-dot"></span>
+                <span>EN TIEMPO REAL</span>
+              </div>
+            </div>
+
+            <div class="os-body">
+              <aside class="os-sidebar">
+                <div class="os-nav-group">
+                  <span class="os-group-label">7 MÓDULOS</span>
+                  <div class="os-nav-item active">
+                    <span class="os-node-dot"></span>
+                    <span>Dashboard</span>
+                  </div>
+                  <div class="os-nav-item">
+                    <span class="os-node-dot"></span>
+                    <span>Proyectos</span>
+                  </div>
+                  <div class="os-nav-item">
+                    <span class="os-node-dot"></span>
+                    <span>Tareas</span>
+                  </div>
+                  <div class="os-nav-item">
+                    <span class="os-node-dot"></span>
+                    <span>Equipo</span>
+                  </div>
+                  <div class="os-nav-item">
+                    <span class="os-node-dot"></span>
+                    <span>Finanzas</span>
+                  </div>
+                  <div class="os-nav-item">
+                    <span class="os-node-dot"></span>
+                    <span>Base de datos</span>
+                  </div>
+                  <div class="os-nav-item">
+                    <span class="os-node-dot"></span>
+                    <span>Administrativo</span>
+                  </div>
+                </div>
+
+                <div class="os-sidebar-card">
+                  <div class="sidebar-card-head">
+                    <span class="mono-xs">RENTABILIDAD</span>
+                    <span class="badge-positive">ÓPTIMA</span>
+                  </div>
+                  <div class="sidebar-health-score">94.2%</div>
+                  <p class="sidebar-health-note">8 obras activas con margen controlado.</p>
+                </div>
+              </aside>
+
+              <div class="os-main-canvas">
+                <div class="os-kpi-grid">
+                  <div class="os-kpi-card">
+                    <div class="kpi-top">
+                      <span class="kpi-label">MARGEN NETO REAL</span>
+                      <span class="kpi-trend positive">+8.4%</span>
+                    </div>
+                    <div class="kpi-value">34.8%</div>
+                    <div class="kpi-bar"><div class="kpi-bar-fill" style="width: 78%"></div></div>
+                    <span class="kpi-foot">Utilidad real sobre horas ejecutadas</span>
+                  </div>
+
+                  <div class="os-kpi-card">
+                    <div class="kpi-top">
+                      <span class="kpi-label">FLUJO DE CAJA &amp; IVA</span>
+                      <span class="kpi-trend neutral">IVA Blindado</span>
+                    </div>
+                    <div class="kpi-value">$148,900 <small>USD</small></div>
+                    <div class="kpi-sub-row">
+                      <span>Libre: <strong>$124,200</strong></span>
+                      <span>IVA: <strong>$24,700</strong></span>
+                    </div>
+                  </div>
+
+                  <div class="os-kpi-card">
+                    <div class="kpi-top">
+                      <span class="kpi-label">CAPACIDAD DE EQUIPO</span>
+                      <span class="kpi-trend positive">Balanceado</span>
+                    </div>
+                    <div class="kpi-value">82% <small>Carga</small></div>
+                    <div class="kpi-bar"><div class="kpi-bar-fill indigo" style="width: 82%"></div></div>
+                    <span class="kpi-foot">Cupo para 2 nuevos proyectos</span>
+                  </div>
+                </div>
+
+                <div class="os-lower-grid">
+                  <div class="os-panel">
+                    <div class="os-panel-header">
+                      <span>CONTROL DE OBRAS ACTIVAS</span>
+                      <span class="mono-xs">TIEMPO REAL</span>
+                    </div>
+                    <div class="os-project-table">
+                      <div class="os-project-row header">
+                        <span>PROYECTO</span>
+                        <span>ETAPA</span>
+                        <span>HORAS</span>
+                        <span>MARGEN</span>
+                      </div>
+                      <div class="os-project-row">
+                        <div class="proj-name">
+                          <span class="proj-dot teal"></span>
+                          <div><strong>Casa Horizonte</strong></div>
+                        </div>
+                        <span class="stage-pill">Ejecutivo</span>
+                        <div class="mini-progress-wrap">
+                          <div class="mini-progress"><span style="width: 68%"></span></div>
+                          <small>310 / 450 h</small>
+                        </div>
+                        <span class="margin-badge high">38.2%</span>
+                      </div>
+
+                      <div class="os-project-row">
+                        <div class="proj-name">
+                          <span class="proj-dot indigo"></span>
+                          <div><strong>Torre Botánica</strong></div>
+                        </div>
+                        <span class="stage-pill">Obra</span>
+                        <div class="mini-progress-wrap">
+                          <div class="mini-progress"><span style="width: 81%"></span></div>
+                          <small>890 / 1,100 h</small>
+                        </div>
+                        <span class="margin-badge high">35.6%</span>
+                      </div>
+
+                      <div class="os-project-row">
+                        <div class="proj-name">
+                          <span class="proj-dot ice"></span>
+                          <div><strong>Pabellón Lumina</strong></div>
+                        </div>
+                        <span class="stage-pill">Anteproyecto</span>
+                        <div class="mini-progress-wrap">
+                          <div class="mini-progress"><span style="width: 42%"></span></div>
+                          <small>95 / 220 h</small>
+                        </div>
+                        <span class="margin-badge high">41.0%</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="os-panel os-node-panel">
+                    <div class="os-panel-header">
+                      <span>SISTEMA CENTRALIZADO</span>
+                      <span class="mono-xs">NODOS</span>
+                    </div>
+                    <div class="node-diagram-box">
+                      <svg viewBox="0 0 280 185" class="node-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M42 36 H115 Q125 36 125 46 V85" stroke="rgba(224,167,148,0.55)" stroke-width="1.2"/>
+                        <path d="M238 36 H165 Q155 36 155 46 V85" stroke="rgba(224,167,148,0.55)" stroke-width="1.2"/>
+                        <path d="M42 150 H115 Q125 150 125 140 V105" stroke="rgba(159,146,164,0.55)" stroke-width="1.2"/>
+                        <path d="M238 150 H165 Q155 150 155 140 V105" stroke="rgba(159,146,164,0.55)" stroke-width="1.2"/>
+                        <circle cx="140" cy="93" r="24" fill="rgba(3,50,58,0.65)" stroke="#E0A794" stroke-width="1.2"/>
+                        <path d="M140 79C140 88 140 93 149 93C140 93 140 98 140 107C140 98 140 93 131 93C140 93 140 88 140 79Z" fill="#E0A794"/>
+                        <rect x="14" y="22" width="58" height="26" rx="6" fill="rgba(3,50,58,0.9)" stroke="rgba(224,167,148,0.3)"/>
+                        <text x="43" y="38" fill="#FAF8F7" font-size="8" font-family="JetBrains Mono" text-anchor="middle">FINANZAS</text>
+                        <rect x="208" y="22" width="58" height="26" rx="6" fill="rgba(3,50,58,0.9)" stroke="rgba(224,167,148,0.3)"/>
+                        <text x="237" y="38" fill="#FAF8F7" font-size="8" font-family="JetBrains Mono" text-anchor="middle">PROYECTOS</text>
+                        <rect x="14" y="136" width="58" height="26" rx="6" fill="rgba(3,50,58,0.9)" stroke="rgba(224,167,148,0.3)"/>
+                        <text x="43" y="152" fill="#FAF8F7" font-size="8" font-family="JetBrains Mono" text-anchor="middle">EQUIPO</text>
+                        <rect x="208" y="136" width="58" height="26" rx="6" fill="rgba(3,50,58,0.9)" stroke="rgba(224,167,148,0.3)"/>
+                        <text x="237" y="152" fill="#FAF8F7" font-size="8" font-family="JetBrains Mono" text-anchor="middle">MÁRGENES</text>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         B. EL DOLOR VS. EL CAMBIO (Directo, escaneable y contundente)
+    ====================================================================== -->
+    <section class="section empathy-section" id="realidad">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-index">
+            <span class="index-num">01</span>
+            <span class="index-line"></span>
+            <span class="index-label">EL PROBLEMA Y LA SOLUCIÓN</span>
+          </div>
+          <h2 class="section-title">
+            Sabes diseñar obras extraordinarias, pero dirigir el negocio se siente como <span class="text-gradient-warm">apagar incendios todos los días.</span>
+          </h2>
+        </div>
+
+        <!-- ¿Para quién es? (1 sola línea clara) -->
+        <div class="audience-banner reveal">
+          <div class="audience-badge-col">
+            <span class="mono-xs audience-eyebrow">¿PARA QUIÉN ES ARQUIVERSO?</span>
+            <h3>Para dueños, socios y directores de estudios de arquitectura</h3>
+          </div>
+          <p class="audience-desc">
+            Deja de operar como autoempleado y convierte tu estudio en una <strong>empresa organizada, controlada y escalable.</strong>
+          </p>
+        </div>
+
+        <!-- Encabezado visual del comparativo -->
+        <div class="shift-columns-head reveal">
+          <div class="shift-col-header pain-header">
+            <span class="status-dot-pain"></span>
+            <span>SIN SISTEMA (HOY)</span>
+          </div>
+          <div class="shift-col-arrow" aria-hidden="true">VS</div>
+          <div class="shift-col-header gain-header">
+            <span class="status-dot-gain"></span>
+            <span>CON ARQUIVERSO</span>
+          </div>
+        </div>
+
+        <!-- Comparativo visual Antes vs. Después (Sin etiquetas repetitivas) -->
+        <div class="transformation-list">
+          <!-- Fila 1 -->
+          <div class="shift-row reveal">
+            <div class="shift-pain">
+              <div class="shift-icon-box pain-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M4 6H10M4 12H14M4 18H9M16 15L21 20M21 15L16 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="shift-copy">
+                <h4>Información regada por todas partes</h4>
+                <p>Excel sueltos, tareas en WhatsApp y archivos desconectados.</p>
+              </div>
+            </div>
+
+            <div class="shift-connector" aria-hidden="true">
+              <div class="connector-circle">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+
+            <div class="shift-gain">
+              <div class="shift-icon-box gain-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <rect x="3" y="3" width="7" height="7" rx="2" stroke="currentColor" stroke-width="1.8"/>
+                  <rect x="14" y="3" width="7" height="7" rx="2" stroke="currentColor" stroke-width="1.8"/>
+                  <rect x="3" y="14" width="7" height="7" rx="2" stroke="currentColor" stroke-width="1.8"/>
+                  <rect x="14" y="14" width="7" height="7" rx="2" stroke="currentColor" stroke-width="1.8"/>
+                </svg>
+              </div>
+              <div class="shift-copy">
+                <h4>Un sistema centralizado</h4>
+                <p>Proyectos, equipo, clientes y finanzas en un solo lugar.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fila 2 -->
+          <div class="shift-row reveal">
+            <div class="shift-pain">
+              <div class="shift-icon-box pain-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M3 3L21 21M10.58 10.58C10.21 10.95 10 11.46 10 12C10 13.1 10.9 14 12 14C12.54 14 13.05 13.79 13.42 13.42M9.36 5.36C10.21 5.12 11.1 5 12 5C16.5 5 20.26 7.91 21.5 12C21.02 13.59 20.12 15.01 18.92 16.12M6.5 6.5C4.68 7.77 3.29 9.69 2.5 12C3.74 16.09 7.5 19 12 19C13.84 19 15.57 18.5 17.06 17.62" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="shift-copy">
+                <h4>Pérdida de control y márgenes invisibles</h4>
+                <p>No sabes cuánto ganas por obra ni cuánto debes reservar de IVA.</p>
+              </div>
+            </div>
+
+            <div class="shift-connector" aria-hidden="true">
+              <div class="connector-circle">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+
+            <div class="shift-gain">
+              <div class="shift-icon-box gain-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M3 17L9 11L13 15L21 7M21 7H15M21 7V13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="shift-copy">
+                <h4>Claridad financiera en tiempo real</h4>
+                <p>Flujo de caja, presupuestos, facturación y utilidad exacta por proyecto.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fila 3 -->
+          <div class="shift-row reveal">
+            <div class="shift-pain">
+              <div class="shift-icon-box pain-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 9V13M12 17H12.01M10.29 3.86L1.82 18C1.64 18.3 1.55 18.64 1.55 19C1.55 20.1 2.45 21 3.55 21H20.45C21.55 21 22.45 20.1 22.45 19C22.45 18.64 22.36 18.3 22.18 18L13.71 3.86C12.95 2.57 11.05 2.57 10.29 3.86Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="shift-copy">
+                <h4>Caos operativo y equipo sobrecargado</h4>
+                <p>Urgencias diarias sin saber quién tiene capacidad disponible.</p>
+              </div>
+            </div>
+
+            <div class="shift-connector" aria-hidden="true">
+              <div class="connector-circle">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+
+            <div class="shift-gain">
+              <div class="shift-icon-box gain-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M9 12L11 14L15 10M21 12C21 16.97 16.97 21 12 21C7.03 21 3 16.97 3 12C3 7.03 7.03 3 12 3C16.97 3 21 7.03 21 12Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="shift-copy">
+                <h4>Operación y cargas bajo control</h4>
+                <p>Etapas claras y distribución inteligente de tareas sin quemar al equipo.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fila 4 -->
+          <div class="shift-row reveal">
+            <div class="shift-pain">
+              <div class="shift-icon-box pain-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/>
+                  <path d="M12 7V12L15 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="shift-copy">
+                <h4>Todo el estudio depende 100% de ti</h4>
+                <p>Crees que crecer significa trabajar el doble de horas.</p>
+              </div>
+            </div>
+
+            <div class="shift-connector" aria-hidden="true">
+              <div class="connector-circle">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+
+            <div class="shift-gain">
+              <div class="shift-icon-box gain-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2L14.8 8.5L22 9.3L16.5 14L18.2 21L12 17.3L5.8 21L7.5 14L2 9.3L9.2 8.5L12 2Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="shift-copy">
+                <h4>De estudio a empresa escalable</h4>
+                <p>Procesos listos para delegar con confianza y hacer crecer tu negocio.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-cta-center reveal" style="margin-top: 40px; display: flex; justify-content: center;">
+          <button class="btn btn-primary btn-lg" data-open-modal="demo">
+            <span>Aplicar al programa</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         02. UN SISTEMA, DOS NÚCLEOS (Visión general)
+    ====================================================================== -->
+    <section class="section cores-section" id="sistema">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-index">
+            <span class="index-num">02</span>
+            <span class="index-line"></span>
+            <span class="index-label">UN SISTEMA, DOS NÚCLEOS</span>
+          </div>
+          <h2 class="section-title">
+            Un estudio que crece se construye con <span class="text-gradient">Transformación y Tecnología.</span>
+          </h2>
+          <p class="section-lead">
+            Arquiverso solo funciona cuando completas ambos: primero aprendes a gestionar un estudio profesional y luego lo operas con tecnología.
+          </p>
+        </div>
+
+        <div class="cores-equation">
+          <article class="core-card core-card-mentoria reveal">
+            <span class="core-card-tag">NÚCLEO 1</span>
+            <h3>Transformación</h3>
+            <p>Aprendes cómo se gestiona un estudio profesional a través de la experiencia real de Espacial.</p>
+            <div class="core-card-stats">
+              <span><strong>7</strong> sesiones 1:1</span>
+              <span><strong>7</strong> semanas</span>
+            </div>
+            <p class="core-card-alone"><strong>Solo mentoría:</strong> sabes cómo hacerlo, pero no tienes dónde ejecutarlo.</p>
+            <a href="#mentoria" class="core-card-link">Ver el núcleo de mentoría →</a>
+          </article>
+
+          <div class="core-operator reveal" aria-hidden="true">+</div>
+
+          <article class="core-card core-card-herramienta reveal">
+            <span class="core-card-tag">NÚCLEO 2</span>
+            <h3>Tecnología</h3>
+            <p>Recibes Arquiverso implementado para poner en práctica, de forma tecnológica, toda la operación.</p>
+            <div class="core-card-stats">
+              <span><strong>7</strong> módulos conectados</span>
+              <span>Costo <strong>por usuario</strong></span>
+            </div>
+            <p class="core-card-alone"><strong>Solo herramienta:</strong> tienes dónde ejecutarlo, pero no sabes cómo hacerlo.</p>
+            <a href="#modulos" class="core-card-link">Ver el núcleo de herramienta →</a>
+          </article>
+
+          <div class="core-operator reveal" aria-hidden="true">=</div>
+
+          <article class="core-card core-card-result reveal">
+            <span class="core-card-tag">EL RESULTADO</span>
+            <h3>Un estudio profesional funcionando</h3>
+            <p>Un negocio organizado, controlado y escalable que ya no depende 100% de ti.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         03. NÚCLEO 1: MENTORÍA (7 sesiones 1:1 en 7 semanas)
+    ====================================================================== -->
+    <section class="section mentoring-section" id="mentoria">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-index">
+            <span class="index-num">03</span>
+            <span class="index-line"></span>
+            <span class="index-label">NÚCLEO 1 · MENTORÍA</span>
+          </div>
+          <h2 class="section-title">
+            Aprende a gestionar un estudio <span class="text-gradient">como lo hace Espacial.</span>
+          </h2>
+          <p class="section-lead">
+            Siete sesiones 1:1 que abren las puertas a toda la experiencia de Espacial en la creación y consolidación de un estudio profesional completamente funcional. Una sesión por cada módulo.
+          </p>
+        </div>
+
+        <div class="mentoring-layout">
+          <!-- Línea de tiempo: 7 sesiones / 7 semanas -->
+          <ol class="session-timeline">
+            <li class="session-item reveal">
+              <span class="session-week">SEMANA 01</span>
+              <div class="session-body">
+                <h4>Dashboard</h4>
+                <p>Por qué es clave un dashboard y cómo llegar a uno útil. Sales con la tarea de crear tu primer dashboard.</p>
+              </div>
+            </li>
+            <li class="session-item reveal">
+              <span class="session-week">SEMANA 02</span>
+              <div class="session-body">
+                <h4>Proyectos</h4>
+                <p>Cómo estructurar el pipeline, las etapas y la rentabilidad de cada proyecto.</p>
+              </div>
+            </li>
+            <li class="session-item reveal">
+              <span class="session-week">SEMANA 03</span>
+              <div class="session-body">
+                <h4>Tareas</h4>
+                <p>Cómo organizar la ejecución diaria, las prioridades y el seguimiento.</p>
+              </div>
+            </li>
+            <li class="session-item reveal">
+              <span class="session-week">SEMANA 04</span>
+              <div class="session-body">
+                <h4>Equipo</h4>
+                <p>Cómo gestionar cargas de trabajo, horas y capacidad real del equipo.</p>
+              </div>
+            </li>
+            <li class="session-item reveal">
+              <span class="session-week">SEMANA 05</span>
+              <div class="session-body">
+                <h4>Finanzas</h4>
+                <p>Cómo controlar flujo de caja, presupuestos, IVA y cobros con claridad.</p>
+              </div>
+            </li>
+            <li class="session-item reveal">
+              <span class="session-week">SEMANA 06</span>
+              <div class="session-body">
+                <h4>Base de datos</h4>
+                <p>Cómo centralizar clientes, proveedores, contratistas e historial.</p>
+              </div>
+            </li>
+            <li class="session-item reveal">
+              <span class="session-week">SEMANA 07</span>
+              <div class="session-body">
+                <h4>Administrativo</h4>
+                <p>Cómo ordenar contratos, facturación, actas y procesos internos.</p>
+              </div>
+            </li>
+          </ol>
+
+          <!-- Columna lateral: foto de las chicas de Espacial + inversión -->
+          <aside class="mentoring-side">
+            <div class="mentoring-photo-card reveal">
+              <img src="Espacial-fundadoras.jpg" alt="Fundadoras de Espacial Estudio" class="mentoring-photo" loading="lazy" />
+              <div class="mentoring-photo-caption">
+                <div class="origin-caption-text">
+                  <span class="mono-xs">MENTORÍA 1:1 DIRECTA</span>
+                  <strong>Con las fundadoras de Espacial Estudio</strong>
+                </div>
+                <img src="./logo-espacial.png" alt="Espacial Estudio" class="origin-espacial-logo" loading="lazy" />
+              </div>
+            </div>
+
+            <div class="core-price-card core-price-mentoria reveal">
+              <span class="price-eyebrow">INVERSIÓN · NÚCLEO DE MENTORÍA</span>
+              <div class="price-amount">$5.500.000 <small>COP</small></div>
+              <p class="price-note">7 semanas · 7 sesiones 1:1 · pago por la mentoría completa</p>
+              <button class="btn btn-primary full-width" data-open-modal="demo">
+                <span>Aplicar al programa</span>
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </aside>
+        </div>
+
+        <!-- Victorias del Núcleo 1 -->
+        <div class="wins-block reveal">
+          <span class="wins-label">LO QUE GANAS AL COMPLETAR EL NÚCLEO 1</span>
+          <div class="wins-grid">
+            <div class="win-item"><span class="win-check">✓</span><p>Entiendes cómo se gestiona un estudio profesional, módulo por módulo.</p></div>
+            <div class="win-item"><span class="win-check">✓</span><p>Accedes a toda la experiencia real de Espacial, sin tener que aprenderla a golpes.</p></div>
+            <div class="win-item"><span class="win-check">✓</span><p>Terminas con 7 tareas aplicadas a tu propio estudio, una por semana.</p></div>
+            <div class="win-item"><span class="win-check">✓</span><p>Llegas con una base de gestión lista para llevarla a la herramienta.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         04. NÚCLEO 2: HERRAMIENTA (Módulos del sistema + inversión por usuario)
+    ====================================================================== -->
+    <section class="section modules-section" id="modulos">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-index">
+            <span class="index-num">04</span>
+            <span class="index-line"></span>
+            <span class="index-label">NÚCLEO 2 · HERRAMIENTA</span>
+          </div>
+          <h2 class="section-title">
+            Pones todo en práctica con <span class="text-gradient">la herramienta ya implementada.</span>
+          </h2>
+          <p class="section-lead">
+            Recibes Arquiverso implementado para desarrollar y operar de forma tecnológica todo lo aprendido: 7 módulos conectados en un solo lugar.
+          </p>
+        </div>
+
+        <div class="modules-interactive-layout reveal">
+          <div class="modules-tabs" role="tablist" aria-label="Módulos de Arquiverso">
+            <button class="module-tab active" role="tab" aria-selected="true" data-module="dashboard">
+              <div class="module-tab-top">
+                <span class="module-tab-num">01</span>
+                <span class="module-tab-indicator"></span>
+              </div>
+              <h3 class="module-tab-title">Dashboard</h3>
+              <p class="module-tab-desc">Visión ejecutiva y pulso general del estudio.</p>
+            </button>
+
+            <button class="module-tab" role="tab" aria-selected="false" data-module="proyectos">
+              <div class="module-tab-top">
+                <span class="module-tab-num">02</span>
+                <span class="module-tab-indicator"></span>
+              </div>
+              <h3 class="module-tab-title">Proyectos</h3>
+              <p class="module-tab-desc">Pipeline, etapas, tiempos y rentabilidad por obra.</p>
+            </button>
+
+            <button class="module-tab" role="tab" aria-selected="false" data-module="tareas">
+              <div class="module-tab-top">
+                <span class="module-tab-num">03</span>
+                <span class="module-tab-indicator"></span>
+              </div>
+              <h3 class="module-tab-title">Tareas</h3>
+              <p class="module-tab-desc">Entregables diarios, prioridades y seguimiento.</p>
+            </button>
+
+            <button class="module-tab" role="tab" aria-selected="false" data-module="equipo">
+              <div class="module-tab-top">
+                <span class="module-tab-num">04</span>
+                <span class="module-tab-indicator"></span>
+              </div>
+              <h3 class="module-tab-title">Equipo</h3>
+              <p class="module-tab-desc">Cargas de trabajo, horas y capacidad real.</p>
+            </button>
+
+            <button class="module-tab" role="tab" aria-selected="false" data-module="finanzas">
+              <div class="module-tab-top">
+                <span class="module-tab-num">05</span>
+                <span class="module-tab-indicator"></span>
+              </div>
+              <h3 class="module-tab-title">Finanzas</h3>
+              <p class="module-tab-desc">Flujo de caja, ingresos, presupuestos, IVA y cobros.</p>
+            </button>
+
+            <button class="module-tab" role="tab" aria-selected="false" data-module="basededatos">
+              <div class="module-tab-top">
+                <span class="module-tab-num">06</span>
+                <span class="module-tab-indicator"></span>
+              </div>
+              <h3 class="module-tab-title">Base de datos</h3>
+              <p class="module-tab-desc">Clientes, proveedores, contratistas e historial.</p>
+            </button>
+
+            <button class="module-tab" role="tab" aria-selected="false" data-module="administrativo">
+              <div class="module-tab-top">
+                <span class="module-tab-num">07</span>
+                <span class="module-tab-indicator"></span>
+              </div>
+              <h3 class="module-tab-title">Administrativo</h3>
+              <p class="module-tab-desc">Contratos, facturación, actas y procesos internos.</p>
+            </button>
+          </div>
+
+          <!-- Panel de Vista Previa Dinámica -->
+          <div class="module-preview-stage" id="moduleStage" aria-live="polite">
+            <div class="stage-topbar">
+              <div class="stage-meta">
+                <span class="stage-dot"></span>
+                <span id="stageCode" class="mono-xs">MÓDULO 01 // DASHBOARD</span>
+              </div>
+              <span id="stageBadge" class="stage-pill-status">TIEMPO REAL</span>
+            </div>
+
+            <div class="stage-body" id="stageBody">
+              <!-- Vista de captura real del sistema (activa en Dashboard) -->
+              <div class="stage-screenshot-wrap" id="stageScreenshotWrap">
+                <img
+                  src="./Dashboard.jpeg"
+                  alt="Dashboard de Arquiverso"
+                  class="stage-screenshot-img"
+                  id="stageScreenshotImg"
+                />
+              </div>
+
+              <!-- Vista interactiva para otros módulos -->
+              <div class="stage-dynamic-content" id="stageDynamicContent" hidden>
+                <div class="stage-headline-row">
+                  <div>
+                    <h4 id="stageTitle">El pulso completo de tu estudio en una sola pantalla</h4>
+                    <p id="stageSubtitle">Visualiza facturación, rentabilidad, proyectos activos y carga de equipo al instante.</p>
+                  </div>
+                </div>
+
+                <div class="stage-metrics-grid" id="stageMetrics"></div>
+                <div class="stage-visual-card" id="stageVisual"></div>
+                <ul class="stage-checklist" id="stageChecklist"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Inversión del Núcleo 2 + victorias -->
+        <div class="tool-offer reveal">
+          <div class="core-price-card core-price-herramienta">
+            <span class="price-eyebrow">INVERSIÓN · NÚCLEO DE HERRAMIENTA</span>
+            <div class="price-amount">$120.000 <small>COP / usuario</small></div>
+            <ul class="price-terms">
+              <li><span>Para iniciar</span><strong>Mínimo 3 usuarios por 6 meses</strong></li>
+              <li><span>Nuevo integrante</span><strong>$120.000 COP por cada nuevo usuario</strong></li>
+            </ul>
+            <button class="btn btn-primary full-width" data-open-modal="demo">
+              <span>Aplicar al programa</span>
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+
+          <div class="wins-block wins-block-tool">
+            <span class="wins-label">LO QUE GANAS AL COMPLETAR EL NÚCLEO 2</span>
+            <div class="wins-list">
+              <div class="win-item"><span class="win-check">✓</span><p>Tu operación completa centralizada: proyectos, tareas, equipo, finanzas y clientes.</p></div>
+              <div class="win-item"><span class="win-check">✓</span><p>Lo aprendido en la mentoría funcionando todos los días en una herramienta real.</p></div>
+              <div class="win-item"><span class="win-check">✓</span><p>Datos claros para decidir: márgenes, flujo de caja y capacidad del equipo.</p></div>
+              <div class="win-item"><span class="win-check">✓</span><p>Un estudio que escala: sumas usuarios a medida que llegan nuevos integrantes.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Módulos Pro opcionales -->
+        <div class="pro-modules-strip reveal">
+          <span class="pro-strip-label">AMPLÍA TU HERRAMIENTA CON MÓDULOS PRO</span>
+          <div class="pro-strip-chips">
+            <span class="pro-chip pro-chip-star">★ Proyectos Kanban</span>
+            <span class="pro-chip pro-chip-star">★ Presupuestos</span>
+            <span class="pro-chip">Cuestionarios</span>
+            <span class="pro-chip">Plantillas</span>
+            <span class="pro-chip">Reportes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         NARRATIVA DE ORIGEN: ESPACIAL (Simplificada y contundente)
+    ====================================================================== -->
+    <section class="section origin-section" id="origen">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-index">
+            <span class="index-num">05</span>
+            <span class="index-line"></span>
+            <span class="index-label">EL ORIGEN · SOFTWARE + KNOW-HOW</span>
+          </div>
+          <h2 class="section-title">
+            No es otro software genérico.<br />
+            <span class="text-gradient">Es la metodología de un estudio real empaquetada para ti.</span>
+          </h2>
+        </div>
+
+        <div class="origin-banner reveal">
+          <div class="origin-visual-col">
+            <div class="origin-photo-card">
+              <img src="Espacial-fundadoras.jpg" alt="Fundadoras del estudio de arquitectura Espacial, creadoras de Arquiverso" class="origin-photo" loading="lazy" />
+              <div class="origin-photo-caption">
+                <div class="origin-caption-text">
+                  <span class="mono-xs">ESPACIAL ESTUDIO // ORIGEN REAL</span>
+                  <strong>Creado por arquitectas para arquitectos</strong>
+                </div>
+                <img src="./logo-espacial.png" alt="Espacial Estudio" class="origin-espacial-logo" loading="lazy" />
+              </div>
+            </div>
+          </div>
+
+          <div class="origin-copy-col">
+            <span class="eyebrow-tag">05 // EL ORIGEN</span>
+            <h2 class="origin-heading">
+              7 años de know-how <span class="text-gradient">convertidos en tecnología.</span>
+            </h2>
+
+            <blockquote class="founder-quote">
+              “Durante 7 años hemos construido un sistema sólido para operar un estudio de arquitectura con control, estructura y practicidad; estamos listas para ponerlo a disposición, queremos que tu negocio también suba de nivel.”
+            </blockquote>
+
+            <p class="origin-body-text">
+              No fue creado por programadores genéricos. Es la metodología real de un estudio consolidado transformada en tu propio sistema operativo.
+            </p>
+
+            <div class="origin-pillars-mini">
+              <div class="mini-pill"><span class="mini-dot"></span><span>Control</span></div>
+              <div class="mini-pill"><span class="mini-dot"></span><span>Estructura</span></div>
+              <div class="mini-pill"><span class="mini-dot"></span><span>Practicidad</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         F. CIERRE Y LLAMADO A LA ACCIÓN
+    ====================================================================== -->
+    <section class="section closing-section">
+      <div class="container">
+        <div class="closing-box reveal">
+          <svg class="closing-orbit-svg" viewBox="0 0 800 360" fill="none" aria-hidden="true">
+            <circle cx="400" cy="180" r="150" stroke="rgba(201,137,110,0.22)" stroke-width="1"/>
+            <circle cx="400" cy="180" r="240" stroke="rgba(43,82,87,0.12)" stroke-width="1"/>
+            <line x1="100" y1="180" x2="700" y2="180" stroke="rgba(159,146,164,0.2)" stroke-width="1"/>
+            <circle cx="250" cy="180" r="3.5" fill="#C9896E"/>
+            <circle cx="550" cy="180" r="3.5" fill="#2B5257"/>
+          </svg>
+
+          <span class="closing-eyebrow">DOS NÚCLEOS, UN SOLO RESULTADO</span>
+          <h2 class="closing-title">
+            Mentoría + herramienta: <span class="text-gradient">el sistema para un estudio que crece.</span>
+          </h2>
+          <p class="closing-subtitle">
+            Completa los dos núcleos y convierte tu estudio en una empresa organizada, controlada y escalable.
+          </p>
+
+          <div class="closing-cta-row">
+            <button class="btn btn-primary btn-lg" data-open-modal="early-access">
+              <span>Aplicar al programa</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-bottom" style="border-top:none;padding-top:0;">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <img src="./LOGO-ARQUIVERSO.png?v=2" alt="Arquiverso" class="brand-logo-img footer-logo-img" />
+        <span style="color:var(--text-muted);">— El universo operativo de tu estudio de arquitectura.</span>
+      </div>
+      <span>© 2026 Arquiverso · Nacido en Espacial</span>
+    </div>
+  </footer>
+
+  <!-- =====================================================================
+       MODAL INTERACTIVO CONSULTIVO
+  ====================================================================== -->
+  <div class="modal-backdrop" id="consultModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-window">
+      <button class="modal-close" id="closeModalBtn" aria-label="Cerrar ventana">
+        <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+          <path d="M5 5L15 15M15 5L5 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <div id="modalFormView">
+        <div class="modal-header">
+          <div class="modal-badge-row">
+            <span class="pulse-dot"></span>
+            <span class="mono-xs" id="modalBadge">ARQUIVERSO OS</span>
+          </div>
+          <h3 id="modalTitle">Lleva tu estudio a otro nivel</h3>
+          <p id="modalDescription">
+            Déjanos tus datos para agendar tu diagnóstico personalizado.
+          </p>
+        </div>
+
+        <form id="arquiversoForm" class="consult-form">
+          <input type="hidden" id="intentInput" name="intent" value="early-access" />
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="fullName">Nombre y cargo</label>
+              <input type="text" id="fullName" name="fullName" required placeholder="Sofía Méndez — Socia" />
+            </div>
+            <div class="form-group">
+              <label for="studioName">Estudio</label>
+              <input type="text" id="studioName" name="studioName" required placeholder="Taller M Arquitectura" />
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="workEmail">Correo</label>
+              <input type="email" id="workEmail" name="workEmail" required placeholder="sofia@tallerm.com" />
+            </div>
+            <div class="form-group">
+              <label for="whatsapp">WhatsApp</label>
+              <input type="tel" id="whatsapp" name="whatsapp" required placeholder="+57 / +52 / +34..." />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Tamaño del equipo</label>
+            <div class="chip-selector" id="teamSizeSelector">
+              <button type="button" class="chip-option active" data-value="1-5 personas (Start)">1 a 5</button>
+              <button type="button" class="chip-option" data-value="6-15 personas (Studio / Pro)">6 a 15</button>
+              <button type="button" class="chip-option" data-value="16+ personas (Scale)">16+</button>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary full-width btn-lg">
+            <span id="modalSubmitText">Aplicar al programa</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <div id="modalSuccessView" class="modal-success-view" hidden>
+        <div class="success-icon-wrap">
+          <svg width="48" height="48" viewBox="0 0 56 56" fill="none">
+            <circle cx="28" cy="28" r="26" stroke="#89D4E8" stroke-width="1.2"/>
+            <path d="M28 14C28 23 28 28 37 28C28 28 28 33 28 42C28 33 28 28 19 28C28 28 28 23 28 14Z" fill="#89D4E8"/>
+          </svg>
+        </div>
+        <span class="mono-xs">SOLICITUD RECIBIDA</span>
+        <h3>¡Listo! Te contactaremos muy pronto.</h3>
+        <div class="success-summary-card" id="submittedDataCard"></div>
+        <button type="button" class="btn btn-glass full-width" id="doneModalBtn">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js?v=12"></script>
+</body>
+</html>
